@@ -1,0 +1,19 @@
+CREATE TABLE Employee (
+    Emp_ID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Age INT,
+    City VARCHAR(50),
+    Department VARCHAR(50),
+    Salary DECIMAL(10,2)
+);
+INSERT INTO Employee (Emp_ID, Name, Age, City, Department, Salary) VALUES
+(101, 'Arun', 28, 'Chennai', 'IT', 65000),
+(102, 'Bala', 35, 'Madurai', 'HR', 50000),
+(103, 'Charan', 30, 'Chennai', 'Finance', 70000),
+(104, 'Divya', 26, 'Coimbatore', 'IT', 55000),
+(105, 'Anitha', 32, 'Chennai', 'HR', 48000),
+(106, 'Karthik', 40, 'Madurai', 'IT', 80000),
+(107, 'Meena', 29, 'Salem', 'Marketing', 62000),
+(108, 'Aravind', 31, 'Chennai', 'Finance', 72000);
+SELECT DISTINCT Department
+FROM Employee;
