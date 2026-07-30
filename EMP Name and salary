@@ -1,0 +1,13 @@
+CREATE TABLE Employee (
+    EmpID INT,
+    EmpName VARCHAR(50),
+    Department VARCHAR(30),
+    Salary INT
+);
+
+INSERT INTO Employee VALUES
+(101, 'Arun', 'HR', 30000),
+(102, 'Bala', 'IT', 45000),
+(103, 'Charan', 'Finance', 50000);
+SELECT name, salary
+FROM employee;
